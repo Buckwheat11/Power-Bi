@@ -1,0 +1,38 @@
+Power Bi pragmatic works
+
+StudentTestingData: raw.githubusercontent.com/PragmaticWorksTraining/Datasets/main/Education/StudentTestingData.csv
+StudentData: raw.githubusercontent.com/PragmaticWorksTraining/Datasets/main/Education/StudentData.csv
+
+
+null = missing value
+blank is non recorded due to being NA. ACTUAL VALUE
+
+replace blank with null
+
+fill down - top values goes down until next one and resets - up is opposite. can only be done on nulls and not blanks, hence the replacement
+
+add column from example, new column data has to match old - spelling - capitals etc. done in this case to show city and state side by side to avoid confusion on which 'Pompano beach'
+
+check model view tab to make / check relationships between tables
+
+hide irrelevant columns in model view
+
+stop auto sum in model view for specific columns 
+
+create hierarchy or many with same fields - basically grouping fields into one rather than selecting multiple
+
+right click to exclude uneeded columns 
+
+use DAX as calculated fields and quick DAX as short cuts
+
+on visualisation, press paintbrush, and deselect column subtotals to remove irrelevant column totals displayed again 
+
+25px radius - borders on
+
+change transparency to 0% when adding wallpaper / canvas background 
+
+rigth clikc on field for a matric or table and press on condtional formatting to colour code it gradient style 
+
+text filter microsoft as a search - add to visualisation 
+
+can multi select multiple bars / data by pressing ctrl and differences in all charts 
