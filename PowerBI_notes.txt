@@ -1,0 +1,13 @@
+remove nulls power query by filter on the column - remove empty 
+
+transform tab - unpivot table to make it a so a date column is now added alongside the value so instead of 31/01/2004 column listing bunch of numbers and having heaps of different date columns, its now added alongside the value, so its no longer a column individually but just a date value next to the row. 
+
+adding X to end of aggregated function can make them an iterator function
+
+so for example Sum x does the calculation row by row rather than calculating all the rows combined
+
+do data standardisation on excel rather than Bi, for example can make different values like 'Data Manager' and 'Data manager' into one much easier on excel 
+
+shadows - custom - transparency 85% on darkest shade of grey 
+
+background colour 240, 243, 247
