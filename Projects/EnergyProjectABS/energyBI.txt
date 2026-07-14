@@ -1,0 +1,17 @@
+ABS dashboard
+
+dataset:
+https://www.abs.gov.au/statistics/industry/energy/energy-account-australia/2023-24/46040DO0004.xlsx
+
+or 
+
+https://www.abs.gov.au/statistics/industry/energy/energy-account-australia/2023-24
+
+power query: use first row as header, filter out total (industry name), replace - to 0, replace np to null , column rename, energy_pj deciaml number change, removed unit columnm, removed industry code column, filter out all 0. unpivoted all year columns, replace all (b) values with regular naming in product, split column by delimiter (-) so it gets split and i only use the year and remove the day
+
+creating dax for total, avg, min , max 
+
+stopped the summarisation of year in the model view tab 
+
+added a new column with this Fossil Fuel Flag = 
+IF('Energy_Australia'[Product] IN {"Black coal", "Brown coal", "Diesel and fuel oil", "Crude oil, condensates and other petroleum products"}, "Fossil Fuel", "Other")
