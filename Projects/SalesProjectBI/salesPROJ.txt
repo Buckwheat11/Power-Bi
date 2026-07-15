@@ -1,0 +1,32 @@
+sales data project 
+
+https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning/data
+
+power query: remove duplicates from transaction id table after sorting date to descending, captiliase each word in category column, new cleaned custome price per unit column using thios if [Price Per Unit] = null and [Total Spent] <> null and [Quantity] <> null then 
+    [Total Spent] / [Quantity] 
+else 
+    [Price Per Unit],  have to filter out nulls in quantity and total spent due to incomplete values, replace blank with null in item column, chnaged datatype of discount column, made true and false capitilsed, repalced null to unknown, removed item table, trimmed all columns, changed date type values from text to decimal/ whole wehn needed
+
+adding a new date table in model view with this code after presing new table:
+
+Date Table = 
+ADDCOLUMNS(
+    CALENDAR( MIN( 'retail_store_sales '[Transaction Date] ), MAX( 'retail_store_sales '[Transaction Date]) ),
+    "Year", YEAR( [Date] ),
+    "Month number", MONTH( [Date] ),
+    "Month Name", FORMAT( [Date], "mmm" )
+)
+
+then attach transaction date from orignal table to date field on new date table, many to one relationship. also stopped their summarisation 
+
+creating dax measures
+
+
+
+
+sort month name (shows ranodmly on x axis like jan, april, feb) by month number colkumn by doing these steps:
+
+In the Fields pane, expand Date Table
+Click directly on the Month Name field (not Month number)
+Column tools ribbon tab appears at top → click Sort by Column
+Choose Month number from the dropdown
